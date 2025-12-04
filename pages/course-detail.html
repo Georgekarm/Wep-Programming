@@ -2,183 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduConnect - Home</title>
+    <meta charset="UTF-8">
+    <title>Course Detail</title>
 </head>
 
-<body>
-
+<body id="top">
     <header>
-        <div>
-            <h1>EduConnect</h1>
-            <p>Connecting learners with world‑class courses anytime, anywhere.</p>
-        </div>
-
-        <nav aria-label="Primary navigation">
+        <h1>EduConnect</h1>
+        <nav>
             <ul>
-                <li><a href="pages/about.html">About Us</a></li>
-                <li><a href="pages/course-catalog.html">Course Catalog</a></li>
-                <li><a href="pages/course-detail.html">Course Details (Sample)</a></li>
-                <li><a href="pages/student-dashboard.html">Student Dashboard</a></li>
-                <li><a href="pages/registration.html">Registration</a></li>
-                <li><a href="pages/contact.html">Contact Me</a></li>
-                <li><a href="https://www.exampleuniversity.edu" target="_blank">University Website</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="course-catalog.html">Course Catalog</a></li>
+                <li><a href="course-detail.html">Course Details</a></li>
             </ul>
         </nav>
     </header>
 
-    <nav aria-label="Breadcrumb">
-        <span>Home</span>
+    <nav>
+        <span><a href="../index.html">Home</a> &gt; <a href="course-catalog.html">Course Catalog</a> &gt; Web Programming</span>
     </nav>
 
-    <main aria-label="Homepage content">
-        <section aria-label="Main content">
-            <section>
-                <header>
-                    <h2>Welcome to EduConnect</h2>
-                </header>
-                <p>
-                    Discover flexible online learning designed to help you build in‑demand skills and advance your academic journey.
-                </p>
-                <p>
-                    Browse our curated catalog of university‑level courses, track your progress in a personalized dashboard, and stay updated with the latest campus announcements &amp; events.
-                </p>
-                <ul>
-                    <li>Learn at your own pace with 100% online modules.</li>
-                    <li>Engage with expert instructors and mentors.</li>
-                    <li>Earn shareable certificates upon completion.</li>
-                </ul>
-            </section>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#overview">Jump to Overview</a></li>
+                <li><a href="#syllabus">Jump to Syllabus</a></li>
+                <li><a href="#reviews">Jump to Reviews</a></li>
+            </ul>
+        </nav>
 
-            <section>
-                <h2>Featured Courses</h2>
-                <p>Jump into one of our most popular offerings this semester.</p>
+        <!-- ❗ خطأ: h1 ثاني داخل الصفحة -->
+        <header>
+            <h1>Web Programming</h1>
+            <p>Learn modern web development</p>
+        </header>
 
-                <div>
-                    <article>
-                        <h3>Introduction to Data Science</h3>
-                        <figure>
-                            <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" width="400" height="220" alt="Students analyzing charts and data on laptops">
-                            <figcaption>
-                                <p>Learn to explore data, build simple models, and communicate insights using real‑world datasets.</p>
-                            </figcaption>
-                        </figure>
-                    </article>
+        <!-- ❗ خطأ: h4 بدل h2 -->
+        <section id="overview">
+            <h4>Overview</h4>
 
-                    <article>
-                        <h3>Modern Web Development</h3>
-                        <figure>
-                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" width="400" height="220" alt="Developer writing code on a laptop in a modern workspace">
-                            <figcaption>
-                                <p>Master HTML, CSS, and JavaScript to create interactive, mobile‑friendly web experiences.</p>
-                            </figcaption>
-                        </figure>
-                    </article>
+            <figure>
+                <img src="img.jpg" width="800" height="400" alt="Course image">
+                <figcaption>Web Programming Course</figcaption>
+            </figure>
 
-                    <article>
-                        <h3>Agile Project Management</h3>
-                        <figure>
-                            <img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg" width="400" height="220" alt="Team collaborating around a table with project documents">
-                            <figcaption>
-                                <p>Develop practical skills in planning, sprinting, and delivering projects with agile methodologies.</p>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-            </section>
+            <p>This course teaches web development fundamentals and modern frameworks.</p>
 
-            <section>
-                <h2>Latest Announcements</h2>
-                <article>
-                    <h3>Spring 2025 Enrollment Now Open</h3>
-                    <p>Reserve your seat in high‑demand courses before they fill up. Early registration closes on January 20.</p>
-                </article>
-                <article>
-                    <h3>New AI &amp; Machine Learning Track</h3>
-                    <p>Explore our brand‑new specialization featuring hands‑on labs and capstone projects with industry partners.</p>
-                </article>
-                <article>
-                    <h3>Virtual Orientation Week</h3>
-                    <p>Join live sessions with advisors and instructors to get tips on succeeding in online learning.</p>
-                </article>
-            </section>
+            <h3>What you'll learn</h3>
+            <ol>
+                <li>HTML and CSS basics</li>
+                <li>JavaScript programming</li>
+                <li>React framework</li>
+                <li>Backend development</li>
+            </ol>
 
-            <section>
-                <h2>EduConnect at a Glance</h2>
-                <dl>
-                    <dt>Active Courses</dt>
-                    <dd>120+ across technology, business, and humanities.</dd>
+            <h3>Requirements or Prerequisites</h3>
+            <ul>
+                <li>Basic computer skills</li>
+                <li>No prior programming experience required</li>
+            </ul>
 
-                    <dt>Enrolled Students</dt>
-                    <dd>18,000+ learners from 30+ countries.</dd>
-
-                    <dt>Average Class Size</dt>
-                    <dd>25 students for personalized interaction.</dd>
-
-                    <dt>Completion Rate</dt>
-                    <dd>88% of learners successfully finish their courses.</dd>
-                </dl>
-            </section>
+            <p>Course Level: Beginner</p>
+            <p>Duration: 8 weeks | Time Commitment: 5 hours per week</p>
         </section>
 
-        <aside aria-label="Sidebar">
+        <section id="syllabus">
 
-            <section>
-                <h2>Search Courses</h2>
-                <form action="#" method="get">
-                    <label>Search</label>
-                    <input type="text" name="search" placeholder="Search by course, topic, or instructor">
-                    <button type="submit">Search</button>
-                </form>
-            </section>
+            <!-- ❗ خطأ: h1 داخل Article -->
+            <article>
+                <h1>Module 1: HTML Basics</h1>
+                <section>
+                    <h4>Lesson 1.1: Introduction to HTML</h4>
+                    <section>
+                        <h5>1.1.1: HTML Structure</h5>
+                    </section>
+                    <section>
+                        <h5>1.1.2: HTML Elements</h5>
+                    </section>
+                </section>
+            </article>
 
-            <section>
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="pages/course-catalog.html">Browse all courses</a></li>
-                    <li><a href="pages/registration.html">Register now</a></li>
-                    <li><a href="pages/student-dashboard.html">Go to my dashboard</a></li>
-                    <li><a href="pages/contact.html">Get support</a></li>
-                </ul>
-            </section>
+            <article>
+                <h3>Module 2: CSS Styling</h3>
+                <section>
+                    <h4>Lesson 2.1: CSS Basics</h4>
+                    <section>
+                        <h5>2.1.1: Selectors</h5>
+                    </section>
+                </section>
+            </article>
 
-            <section aria-label="Latest news ticker">
-                <h2>Latest News</h2>
-                <div>
-                    <span>
-              Campus Innovation Day on March 12 &nbsp; • &nbsp;
-              Free weekend workshop: Building Your First Portfolio &nbsp; • &nbsp;
-              Scholarship applications close February 5 — apply today!
-            </span>
-                </div>
-            </section>
+            <!-- ❗ خطأ: h2 بدل h3 -->
+            <article>
+                <h2>Module 3: JavaScript</h2>
+                <section>
+                    <h4>Lesson 3.1: JavaScript Fundamentals</h4>
+                </section>
+            </article>
 
-            <div>
-                <aside aria-label="Promotional offer">
-                    <h3>Upgrade to EduConnect Plus</h3>
-                    <p>Unlock unlimited course access, premium support, and exclusive live sessions with faculty experts.</p>
-                    <p><strong>Limited‑time offer:</strong> 30% off annual plans for new students.</p>
-                    <p><a href="pages/registration.html">Learn more &amp; upgrade</a></p>
-                </aside>
-            </div>
+        </section>
+
+        <aside>
+            <!-- aside normal -->
         </aside>
+
+        <!-- ❗ خطأ: h5 كعنوان Section رئيسي -->
+        <section id="reviews">
+            <h5>Reviews</h5>
+            <p>Average Rating: 4.5 out of 5.0</p>
+
+            <article>
+                <h3>Student Name: Alice</h3>
+                <p>Rating: 5 stars</p>
+            </article>
+
+            <article>
+                <h3>Student Name: Bob</h3>
+            </article>
+
+        </section>
+
+        <nav>
+            <p><a href="#top">Back to Top</a></p>
+        </nav>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <div>
-            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg">Email the EduConnect team</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-
-            <a href="pages/about.html">About Us</a>
-        </div>
-
-        <div>
-            <span>&copy; 2025 EduConnect. All rights reserved.</span>
-        </div>
+        <p>&copy; 2025 EduConnect</p>
     </footer>
 </body>
 
