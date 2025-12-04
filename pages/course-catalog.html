@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Catalog</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>EduConnect</h1>
+            <p>Connecting learners with world-class courses anytime, anywhere.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/course-catalog.html">Course Catalog</a></li>
+                <li><a href="pages/course-detail.html">Course Details (Sample)</a></li>
+                <li><a href="pages/student-dashboard.html">Student Dashboard</a></li>
+                <li><a href="pages/registration.html">Registration</a></li>
+                <li><a href="pages/contact.html">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg" target="_blank">University Website</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Course Catalog</li>
+        </ol>
+    </nav>
+
+    <main>
+
+        <!-- Search form -->
+        <form>
+            <label for="search">Search courses:</label>
+            <input type="search" id="search" name="search">
+
+            <label for="sort">Sort by:</label>
+            <select id="sort" name="sort">
+                <option>Popularity</option>
+                <option>Price</option>
+                <option>Rating</option>
+                <option>Newest</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <p>Showing 6 courses</p>
+
+        <!-- ASIDE -->
+        <aside>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label>
+                        <input type="checkbox" name="category" value="Operating System">
+                        Operating System
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="Web Programming">
+                        Web Programming
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="Information Systems">
+                        Information Systems
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Level</legend>
+                    <label>
+                        <input type="radio" name="level" value="beginner">
+                        Beginner
+                    </label>
+                    <label>
+                        <input type="radio" name="level" value="intermediate">
+                        Intermediate
+                    </label>
+                    <label>
+                        <input type="radio" name="level" value="advanced">
+                        Advanced
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Duration</legend>
+                    <label for="duration">Duration</label>
+                    <select id="duration" name="duration">
+                        <option>Any</option>
+                        <option>&lt; 4 weeks</option>
+                        <option>4-8 weeks</option>
+                        <option>&gt; 8 weeks</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rating</legend>
+                    <label for="rating">Minimum rating</label>
+                    <input type="range" id="rating" name="rating" min="1" max="5">
+                </fieldset>
+
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!-- COURSE GRID -->
+        <section>
+            <h2>Available Courses</h2>
+
+            <!-- COURSE 1 -->
+            <article>
+                <figure>
+                    <img src="images/course1.jpg" alt="Course image">
+                    <figcaption>Course 1 image</figcaption>
+                </figure>
+                <h3>Course 1 Title</h3>
+                <p>Short description of course 1.</p>
+                <p>Instructor: Name 1</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>4 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Beginner</dd>
+                    <dt>Price</dt>
+                    <dd>$100</dd>
+                </dl>
+                <p>Rating: 4.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+            <!-- COURSE 2 -->
+            <article>
+                <figure>
+                    <img src="images/course2.jpg" alt="Course image">
+                    <figcaption>Course 2 image</figcaption>
+                </figure>
+                <h3>Course 2 Title</h3>
+                <p>Short description of course 2.</p>
+                <p>Instructor: Name 2</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>6 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Price</dt>
+                    <dd>$120</dd>
+                </dl>
+                <p>Rating: 4.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+            <!-- COURSE 3 -->
+            <article>
+                <figure>
+                    <img src="images/course3.jpg" alt="Course image">
+                    <figcaption>Course 3 image</figcaption>
+                </figure>
+                <h3>Course 3 Title</h3>
+                <p>Short description of course 3.</p>
+                <p>Instructor: Name 3</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>8 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Advanced</dd>
+                    <dt>Price</dt>
+                    <dd>$150</dd>
+                </dl>
+                <p>Rating: 5.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+            <!-- COURSE 4 -->
+            <article>
+                <figure>
+                    <img src="images/course4.jpg" alt="Course image">
+                    <figcaption>Course 4 image</figcaption>
+                </figure>
+                <h3>Course 4 Title</h3>
+                <p>Short description of course 4.</p>
+                <p>Instructor: Name 4</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>3 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Beginner</dd>
+                    <dt>Price</dt>
+                    <dd>$90</dd>
+                </dl>
+                <p>Rating: 3.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+            <!-- COURSE 5 -->
+            <article>
+                <figure>
+                    <img src="images/course5.jpg" alt="Course image">
+                    <figcaption>Course 5 image</figcaption>
+                </figure>
+                <h3>Course 5 Title</h3>
+                <p>Short description of course 5.</p>
+                <p>Instructor: Name 5</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>5 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Price</dt>
+                    <dd>$110</dd>
+                </dl>
+                <p>Rating: 4.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+            <!-- COURSE 6 -->
+            <article>
+                <figure>
+                    <img src="images/course6.jpg" alt="Course image">
+                    <figcaption>Course 6 image</figcaption>
+                </figure>
+                <h3>Course 6 Title</h3>
+                <p>Short description of course 6.</p>
+                <p>Instructor: Name 6</p>
+                <dl>
+                    <dt>Duration</dt>
+                    <dd>7 weeks</dd>
+                    <dt>Level</dt>
+                    <dd>Advanced</dd>
+                    <dt>Price</dt>
+                    <dd>$140</dd>
+                </dl>
+                <p>Rating: 5.0</p>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                </ul>
+                <a href="pages/course-detail.html">View Details</a>
+            </article>
+
+        </section>
+
+        <!-- TABLE -->
+        <section>
+            <h2>Course Comparison Table</h2>
+
+            <table>
+                <caption>Course comparison</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Enrollment</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Course 1 Title</th>
+                        <td>$100</td>
+                        <td>4 weeks</td>
+                        <td>Beginner</td>
+                        <td>4.0</td>
+                        <td rowspan="2">200 students</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Course 2 Title</th>
+                        <td>$120</td>
+                        <td>6 weeks</td>
+                        <td>Intermediate</td>
+                        <td>4.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Course 3 Title</th>
+                        <td colspan="2">$150 (bundle)</td>
+                        <td>Advanced</td>
+                        <td>5.0</td>
+                        <td>150 students</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg">Email the EduConnect team</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="pages/about.html">About Us</a>
+        </div>
+
+        <div>
+            <span>&copy; 2025 EduConnect. All rights reserved.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
