@@ -1,439 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduConnect - Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for EduConnect courses and select your preferred learning path.">
+    <meta name="keywords" content="registration, courses, enrollment, EduConnect">
+    <meta name="author" content="George karm">
+    <title>EduConnect - Registration</title>
 </head>
+
 <body>
-  <header>
-    <div>
-      <h1>EduConnect</h1>
-      <p>Connecting learners with world‑class courses anytime, anywhere.</p>
-    </div>
+    <!-- =========== HEADER SECTION =========== -->
+    <header>
+        <div>
+            <h1>EduConnect</h1>
+            <p>Connecting learners with world-class courses anytime, anywhere.</p>
+        </div>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="../index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About Us">About Us</a></li>
+                <li><a href="course-catalog.html" title="Course Catalog">Course Catalog</a></li>
+                <li><a href="course-detail.html" title="Course Details">Course Details (Sample)</a></li>
+                <li><a href="student-dashboard.html" title="Student Dashboard">Student Dashboard</a></li>
+                <li><a href="registration.html" title="Registration">Registration</a></li>
+                <li><a href="contact.html" title="Contact Me">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg/" target="_blank" rel="noopener noreferrer" title="University Website">University Website</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- =========== END HEADER =========== -->
 
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="course-catalog.html">Course Catalog</a></li>
-        <li><a href="course-detail.html">Course Details (Sample)</a></li>
-        <li><a href="student-dashboard.html">Student Dashboard</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="https://www.gu.edu.eg/" target="_blank">University Website</a></li>
-      </ul>
+    <!-- Breadcrumb navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <span>Registration</span>
     </nav>
-  </header>
 
-  <nav aria-label="Breadcrumb">
-    <span><a href="../index.html">Home</a> &gt; Registration</span>
-  </nav>
+    <!-- =========== MAIN SECTION =========== -->
+    <main>
+        <section>
+            <header>
+                <h2>Course Registration Form</h2>
+            </header>
+            <p>Please complete the form below to register for your selected courses.</p>
 
-  <main>
-    <section>
-      <header>
-        <h2>Course Registration Form</h2>
-      </header>
-      <p>Please complete the form below to register for your selected courses.</p>
+            <form action="thank.html" method="get" name="registrationForm" id="registrationForm">
+                <!-- Personal Information fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <!-- Full Name input -->
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" minlength="3" maxlength="50" required placeholder="Enter your full name" title="Enter your full name (3 to 50 characters)" autofocus>
+                    </p>
+                    <!-- Student ID input -->
+                    <p>
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student-id" required pattern="\d{9}" placeholder="123456789" title="Enter your 9-digit student ID using numbers only">
+                    </p>
+                    <!-- Email Address input -->
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="student@example.com" title="Enter a valid university email address" autocomplete="email">
+                    </p>
+                    <!-- Password input -->
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8" maxlength="20" placeholder="Minimum 8 characters" title="Password must be between 8 and 20 characters" autocomplete="new-password">
+                    </p>
+                    <!-- Confirm Password input -->
+                    <p>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required minlength="8" maxlength="20" placeholder="Re-enter your password" title="Re-enter your password">
+                    </p>
+                    <!-- Date of Birth input -->
+                    <p>
+                        <label for="date-of-birth">Date of Birth:</label>
+                        <input type="date" id="date-of-birth" name="date-of-birth" required max="2007-12-31" title="You must be at least 18 years old" autocomplete="bday">
+                    </p>
+                    <!-- Gender selection fieldset -->
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            <label for="gender-male">
+                                <input type="radio" id="gender-male" name="gender" value="male" required>
+                                Male
+                            </label>
+                        </p>
+                        <p>
+                            <label for="gender-female">
+                                <input type="radio" id="gender-female" name="gender" value="female" required>
+                                Female
+                            </label>
+                        </p>
+                        <p>
+                            <label for="gender-prefer">
+                                <input type="radio" id="gender-prefer" name="gender" value="prefer-not-say" required>
+                                Prefer not to say
+                            </label>
+                        </p>
+                    </fieldset>
+                    <!-- Profile Photo fieldset -->
+                    <fieldset>
+                        <legend>Profile Photo</legend>
+                        <p>
+                            <label for="profile-photo">Profile Photo:</label>
+                            <input type="file" id="profile-photo" name="profile-photo" accept="image/*" title="Upload your profile photo (image files only)">
+                        </p>
+                    </fieldset>
+                </fieldset>
 
-      <form action="pages/thank.html" method="get" name="registrationForm" id="registrationForm">
-        <!-- Section 1: Personal Information -->
-        <fieldset>
-          <legend>Personal Information</legend>
+                <!-- Academic Information fieldset -->
+                <fieldset>
+                    <legend>Academic Information</legend>
+                    <!-- Current Degree Level fieldset -->
+                    <fieldset>
+                        <legend>Current Degree Level</legend>
+                        <p>
+                            <label for="degree-bachelor">
+                                <input type="radio" id="degree-bachelor" name="degree-level" value="bachelor" checked required>
+                                Bachelor's Degree
+                            </label>
+                        </p>
+                        <p>
+                            <label for="degree-master">
+                                <input type="radio" id="degree-master" name="degree-level" value="master" required>
+                                Master's Degree
+                            </label>
+                        </p>
+                        <p>
+                            <label for="degree-phd">
+                                <input type="radio" id="degree-phd" name="degree-level" value="phd" required>
+                                PhD
+                            </label>
+                        </p>
+                    </fieldset>
+                    <!-- Major / Department select -->
+                    <p>
+                        <label for="major">Major / Department:</label>
+                        <select id="major" name="major" required>
+                            <option value="">-- Select Your Major --</option>
+                            <optgroup label="Faculty of Engineering">
+                                <option value="cs">Computer Science</option>
+                                <option value="it">Information Technology</option>
+                                <option value="se">Software Engineering</option>
+                                <option value="ce">Computer Engineering</option>
+                            </optgroup>
+                            <optgroup label="Faculty of Business">
+                                <option value="marketing">Marketing</option>
+                                <option value="finance">Finance</option>
+                                <option value="management">Management</option>
+                                <option value="accounting">Accounting</option>
+                            </optgroup>
+                            <optgroup label="Faculty of Science">
+                                <option value="mathematics">Mathematics</option>
+                                <option value="physics">Physics</option>
+                                <option value="biology">Biology</option>
+                                <option value="chemistry">Chemistry</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <!-- Current Semester input -->
+                    <p>
+                        <label for="current-semester">Current Semester:</label>
+                        <input type="number" id="current-semester" name="current-semester" required min="1" max="12" placeholder="1-12" title="Enter your current semester (1-12)">
+                    </p>
+                    <!-- Current GPA input -->
+                    <p>
+                        <label for="gpa">Current GPA:</label>
+                        <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.01" placeholder="0.00 - 4.00" title="Enter your GPA (0.00 - 4.00)">
+                    </p>
+                    <!-- Previous Programming Experience fieldset -->
+                    <fieldset>
+                        <legend>Previous Programming Experience</legend>
+                        <p>
+                            <label for="lang-python">
+                                <input type="checkbox" id="lang-python" name="language" value="python">
+                                Python
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-java">
+                                <input type="checkbox" id="lang-java" name="language" value="java">
+                                Java
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-cpp">
+                                <input type="checkbox" id="lang-cpp" name="language" value="cpp">
+                                C++
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-javascript">
+                                <input type="checkbox" id="lang-javascript" name="language" value="javascript">
+                                JavaScript
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-php">
+                                <input type="checkbox" id="lang-php" name="language" value="php">
+                                PHP
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-csharp">
+                                <input type="checkbox" id="lang-csharp" name="language" value="csharp">
+                                C#
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lang-none">
+                                <input type="checkbox" id="lang-none" name="language" value="none">
+                                None
+                            </label>
+                        </p>
+                    </fieldset>
+                </fieldset>
 
-          <p>
-            <label>
-              Full Name:
-              <input type="text" name="full-name" minlength="3" maxlength="50" required placeholder="Enter your full name" title="Enter your full name (3 to 50 characters)" autofocus>
-            </label>
-          </p>
+                <!-- Course Preferences fieldset -->
+                <fieldset>
+                    <legend>Course Preferences</legend>
+                    <!-- Preferred Learning Mode fieldset -->
+                    <fieldset>
+                        <legend>Preferred Learning Mode</legend>
+                        <p>
+                            <label for="mode-oncampus">
+                                <input type="radio" id="mode-oncampus" name="learning-mode" value="on-campus" required>
+                                On-Campus
+                            </label>
+                        </p>
+                        <p>
+                            <label for="mode-online">
+                                <input type="radio" id="mode-online" name="learning-mode" value="online" required>
+                                Online
+                            </label>
+                        </p>
+                        <p>
+                            <label for="mode-hybrid">
+                                <input type="radio" id="mode-hybrid" name="learning-mode" value="hybrid" required>
+                                Hybrid Mixed
+                            </label>
+                        </p>
+                    </fieldset>
+                    <!-- Course Categories of Interest select -->
+                    <p>
+                        <label for="course-categories">Course Categories of Interest:</label>
+                        <select id="course-categories" name="course-categories" size="5" multiple required>
+                            <option value="web-development">Web Development</option>
+                            <option value="mobile-development">Mobile Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="game-development">Game Development</option>
+                            <option value="cloud-computing">Cloud Computing</option>
+                            <option value="database-management">Database Management</option>
+                            <option value="devops">DevOps</option>
+                            <option value="blockchain">Blockchain Technology</option>
+                        </select>
+                        <span>Select 1-3 categories (Hold Ctrl/Cmd for multiple)</span>
+                    </p>
+                    <!-- Preferred Class Schedule select -->
+                    <p>
+                        <label for="class-schedule">Preferred Class Schedule:</label>
+                        <select id="class-schedule" name="class-schedule" required>
+                            <option value="">-- Select Schedule --</option>
+                            <option value="morning">Morning 8:00 AM - 12:00 PM</option>
+                            <option value="afternoon">Afternoon 12:00 PM - 4:00 PM</option>
+                            <option value="evening">Evening 4:00 PM - 8:00 PM</option>
+                            <option value="weekend">Weekend Saturday &amp; Sunday</option>
+                        </select>
+                    </p>
+                    <!-- Primary Course Selection select -->
+                    <p>
+                        <label for="primary-course">Primary Course Selection:</label>
+                        <select id="primary-course" name="primary-course" required>
+                            <option value="">-- Select Primary Course --</option>
+                            <optgroup label="Web Development">
+                                <option value="html-css">HTML &amp; CSS Fundamentals</option>
+                                <option value="advanced-js">Advanced JavaScript</option>
+                                <option value="react">React.js Development</option>
+                                <option value="nodejs">Node.js &amp; Backend</option>
+                            </optgroup>
+                            <optgroup label="Mobile Development">
+                                <option value="android">Android Development</option>
+                                <option value="ios">iOS Development</option>
+                                <option value="flutter">Flutter Cross-Platform</option>
+                            </optgroup>
+                            <optgroup label="Data &amp; AI">
+                                <option value="python-data">Python for Data Science</option>
+                                <option value="ml">Machine Learning</option>
+                                <option value="deep-learning">Deep Learning</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <!-- Alternative Courses select -->
+                    <p>
+                        <label for="alternative-courses">Alternative Courses:</label>
+                        <select id="alternative-courses" name="alternative-courses" size="4" multiple title="Select up to 3 alternative courses">
+                            <option value="sql">SQL &amp; Databases</option>
+                            <option value="git">Git &amp; Version Control</option>
+                            <option value="docker">Docker &amp; Containers</option>
+                            <option value="aws">AWS Cloud Basics</option>
+                            <option value="security">Web Security</option>
+                            <option value="testing">Software Testing</option>
+                        </select>
+                    </p>
+                </fieldset>
 
-          <p>
-            <label>
-              Student ID:
-              <input type="text" name="student-id" required pattern="\d{9}" placeholder="123456789" title="Enter your 9-digit student ID using numbers only">
-            </label>
-          </p>
+                <!-- Additional Information fieldset -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <!-- How did you hear about us select -->
+                    <p>
+                        <label for="referral-source">How did you hear about us?</label>
+                        <select id="referral-source" name="referral-source">
+                            <option value="">-- Please Select --</option>
+                            <option value="search-engine">Search Engine (Google, Bing)</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="friend">Friend or Colleague</option>
+                            <option value="university-announcement">University Announcement</option>
+                            <option value="online-ad">Online Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- Special Requirements textarea -->
+                    <p>
+                        <label for="special-needs">Special Requirements or Accessibility Needs:</label>
+                        <textarea id="special-needs" name="special-needs" rows="4" cols="50" maxlength="500" placeholder="Describe any special requirements or accessibility needs" title="Describe any special requirements or accessibility needs (max 500 characters)"></textarea>
+                    </p>
+                    <!-- Learning Goals textarea -->
+                    <p>
+                        <label for="learning-goals">Your Learning Goals and Expectations:</label>
+                        <textarea id="learning-goals" name="learning-goals" rows="5" cols="50" maxlength="500" placeholder="Describe your learning goals and what you expect from this course" title="Describe your learning goals and what you expect from this course (max 500 characters)"></textarea>
+                    </p>
+                </fieldset>
 
-          <p>
-            <label>
-              Email Address:
-              <input type="email" name="email" required placeholder="student@example.com" title="Enter a valid university email address" autocomplete="email">
-            </label>
-          </p>
+                <!-- Terms and Conditions fieldset -->
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    <!-- Agree to Terms checkbox -->
+                    <p>
+                        <label for="agree-terms">
+                            <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                            I agree to the <a href="terms.html" title="Read Terms and Conditions">Terms and Conditions</a>.
+                        </label>
+                    </p>
+                    <!-- Agree to Privacy checkbox -->
+                    <p>
+                        <label for="agree-privacy">
+                            <input type="checkbox" id="agree-privacy" name="agree-privacy" required>
+                            I have read and accept the <a href="privacy.html" title="Read Privacy Policy">Privacy Policy</a>.
+                        </label>
+                    </p>
+                    <!-- Newsletter subscription checkbox -->
+                    <p>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to our newsletter for course updates and special offers
+                        </label>
+                    </p>
+                    <!-- Marketing communications checkbox -->
+                    <p>
+                        <label for="agree-marketing">
+                            <input type="checkbox" id="agree-marketing" name="agree-marketing">
+                            I agree to receive marketing communications via email
+                        </label>
+                    </p>
+                </fieldset>
 
-          <p>
-            <label>
-              Password:
-              <input type="password" name="password" required minlength="8" maxlength="20" placeholder="Minimum 8 characters" title="Password must be between 8 and 20 characters" autocomplete="new-password">
-            </label>
-          </p>
+                <!-- Form submission buttons -->
+                <p>
+                    <button type="submit" title="Submit your registration">Submit Registration</button>
+                    <button type="reset" title="Clear the form">Reset Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <!-- =========== END MAIN =========== -->
 
-          <p>
-            <label>
-              Confirm Password:
-              <input type="password" name="confirm-password" required minlength="8" maxlength="20" placeholder="Re-enter your password">
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Date of Birth:
-              <input type="date" name="date-of-birth" required max="2007-12-31" title="You must be at least 18 years old" autocomplete="bday">
-            </label>
-          </p>
-
-          <fieldset>
-            <legend>Gender</legend>
-
-            <p>
-              <label>
-                <input type="radio" name="gender" value="male" required>
-                Male
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="gender" value="female" required>
-                Female
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="gender" value="prefer-not-say" required>
-                Prefer not to say
-              </label>
-            </p>
-          </fieldset>
-
-          <fieldset>
-            <legend>Profile Photo</legend>
-            <p>
-              <label>
-                Profile Photo:
-                <input type="file" name="profile-photo" accept="image/*" title="Upload your profile photo (image files only)">
-              </label>
-            </p>
-          </fieldset>
-        </fieldset>
-
-        <!-- Section 2: Academic Information -->
-        <fieldset>
-          <legend>Academic Information</legend>
-
-          <fieldset>
-            <legend>Current Degree Level</legend>
-
-            <p>
-              <label>
-                <input type="radio" name="degree-level" value="bachelor" checked required>
-                Bachelor's Degree
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="degree-level" value="master">
-                Master's Degree
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="degree-level" value="phd">
-                PhD
-              </label>
-            </p>
-          </fieldset>
-
-          <p>
-            <label>
-              Major / Department:
-              <select name="major" required>
-                <option value="">-- Select Your Major --</option>
-                <optgroup label="Faculty of Engineering">
-                  <option value="cs">Computer Science</option>
-                  <option value="it">Information Technology</option>
-                  <option value="se">Software Engineering</option>
-                  <option value="ce">Computer Engineering</option>
-                </optgroup>
-                <optgroup label="Faculty of Business">
-                  <option value="marketing">Marketing</option>
-                  <option value="finance">Finance</option>
-                  <option value="management">Management</option>
-                  <option value="accounting">Accounting</option>
-                </optgroup>
-                <optgroup label="Faculty of Science">
-                  <option value="mathematics">Mathematics</option>
-                  <option value="physics">Physics</option>
-                  <option value="biology">Biology</option>
-                  <option value="chemistry">Chemistry</option>
-                </optgroup>
-              </select>
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Current Semester:
-              <input type="number" name="current-semester" required min="1" max="12" placeholder="1-12" title="Enter your current semester (1-12)">
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Current GPA:
-              <input type="number" name="gpa" min="0" max="4" step="0.01" placeholder="0.00 - 4.00" title="Enter your GPA (0.00 - 4.00)">
-            </label>
-          </p>
-
-          <fieldset>
-            <legend>Previous Programming Experience</legend>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="python">
-                Python
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="java">
-                Java
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="cpp">
-                C++
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="javascript">
-                JavaScript
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="php">
-                PHP
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="csharp">
-                C#
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="checkbox" name="language" value="none">
-                None
-              </label>
-            </p>
-          </fieldset>
-        </fieldset>
-
-        <!-- Section 3: Course Preferences -->
-        <fieldset>
-          <legend>Course Preferences</legend>
-
-          <fieldset>
-            <legend>Preferred Learning Mode</legend>
-
-            <p>
-              <label>
-                <input type="radio" name="learning-mode" value="on-campus" required>
-                On-Campus
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="learning-mode" value="online">
-                Online
-              </label>
-            </p>
-
-            <p>
-              <label>
-                <input type="radio" name="learning-mode" value="hybrid">
-                Hybrid Mixed
-              </label>
-            </p>
-          </fieldset>
-
-          <p>
-            <label>
-              Course Categories of Interest:
-              <select name="course-categories" size="5" multiple required>
-                <option value="web-development">Web Development</option>
-                <option value="mobile-development">Mobile Development</option>
-                <option value="data-science">Data Science</option>
-                <option value="ai">Artificial Intelligence</option>
-                <option value="cybersecurity">Cybersecurity</option>
-                <option value="game-development">Game Development</option>
-                <option value="cloud-computing">Cloud Computing</option>
-                <option value="database-management">Database Management</option>
-                <option value="devops">DevOps</option>
-                <option value="blockchain">Blockchain Technology</option>
-              </select>
-            </label>
-            <span>Select 1-3 categories (Hold Ctrl/Cmd for multiple)</span>
-          </p>
-
-          <p>
-            <label>
-              Preferred Class Schedule:
-              <select name="class-schedule" required>
-                <option value="">-- Select Schedule --</option>
-                <option value="morning">Morning 8:00 AM - 12:00 PM</option>
-                <option value="afternoon">Afternoon 12:00 PM - 4:00 PM</option>
-                <option value="evening">Evening 4:00 PM - 8:00 PM</option>
-                <option value="weekend">Weekend Saturday &amp; Sunday</option>
-              </select>
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Primary Course Selection:
-              <select name="primary-course" required>
-                <option value="">-- Select Primary Course --</option>
-                <optgroup label="Web Development">
-                  <option value="html-css">HTML &amp; CSS Fundamentals</option>
-                  <option value="advanced-js">Advanced JavaScript</option>
-                  <option value="react">React.js Development</option>
-                  <option value="nodejs">Node.js &amp; Backend</option>
-                </optgroup>
-                <optgroup label="Mobile Development">
-                  <option value="android">Android Development</option>
-                  <option value="ios">iOS Development</option>
-                  <option value="flutter">Flutter Cross-Platform</option>
-                </optgroup>
-                <optgroup label="Data &amp; AI">
-                  <option value="python-data">Python for Data Science</option>
-                  <option value="ml">Machine Learning</option>
-                  <option value="deep-learning">Deep Learning</option>
-                </optgroup>
-              </select>
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Alternative Courses:
-              <select name="alternative-courses" size="4" multiple title="Select up to 3 alternative courses">
-                <option value="sql">SQL &amp; Databases</option>
-                <option value="git">Git &amp; Version Control</option>
-                <option value="docker">Docker &amp; Containers</option>
-                <option value="aws">AWS Cloud Basics</option>
-                <option value="security">Web Security</option>
-                <option value="testing">Software Testing</option>
-              </select>
-            </label>
-          </p>
-        </fieldset>
-
-        <!-- Section 4: Additional Information -->
-        <fieldset>
-          <legend>Additional Information</legend>
-
-          <p>
-            <label>
-              How did you hear about us?
-              <select name="referral-source">
-                <option value="">-- Please Select --</option>
-                <option value="search-engine">Search Engine (Google, Bing)</option>
-                <option value="social-media">Social Media</option>
-                <option value="friend">Friend or Colleague</option>
-                <option value="university-announcement">University Announcement</option>
-                <option value="online-ad">Online Advertisement</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Special Requirements or Accessibility Needs:
-              <textarea name="special-needs" rows="4" cols="50" maxlength="500" placeholder="Describe any special requirements or accessibility needs" title="Describe any special requirements or accessibility needs (max 500 characters)"></textarea>
-            </label>
-          </p>
-
-          <p>
-            <label>
-              Your Learning Goals and Expectations:
-              <textarea name="learning-goals" rows="5" cols="50" maxlength="500" placeholder="Describe your learning goals and what you expect from this course"></textarea>
-            </label>
-          </p>
-        </fieldset>
-
-        <!-- Section 5: Terms and Conditions -->
-        <fieldset>
-          <legend>Terms and Conditions</legend>
-
-          <p>
-            <label>
-              <input type="checkbox" name="agree-terms" required>
-              I agree to the <a href="terms.html">Terms and Conditions</a>.
-            </label>
-          </p>
-
-          <p>
-            <label>
-              <input type="checkbox" name="agree-privacy" required>
-              I have read and accept the <a href="privacy.html">Privacy Policy</a>.
-            </label>
-          </p>
-
-          <p>
-            <label>
-              <input type="checkbox" name="newsletter">
-              Subscribe to our newsletter for course updates and special offers
-            </label>
-          </p>
-
-          <p>
-            <label>
-              <input type="checkbox" name="agree-marketing">
-              I agree to receive marketing communications via email
-            </label>
-          </p>
-        </fieldset>
-
-        <p>
-          <button type="submit">Submit Registration</button>
-          <button type="reset">Reset Form</button>
-        </p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <a href="mailto:Samy.Ghoniemy@Gu.edu.eg">Email the EduConnect team</a>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      <a href="about.html">About Us</a>
-    </div>
-
-    <div>
-      <span>&copy; 2025 EduConnect. All rights reserved.</span>
-    </div>
-  </footer>
+    <!-- =========== FOOTER SECTION =========== -->
+    <footer>
+        <address>
+            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg" title="Email the EduConnect team">Email the EduConnect team</a>
+        </address>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">Twitter</a>
+            <a href="about.html" title="About Us">About Us</a>
+        </div>
+        <div>
+            <p>&copy; 2025 EduConnect. All rights reserved.</p>
+            <p>Last Updated <time datetime="2025-12-04">December 4, 2025</time></p>
+        </div>
+    </footer>
+    <!-- =========== END FOOTER =========== -->
 </body>
+
 </html>
-
-

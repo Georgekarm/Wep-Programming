@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EduConnect - Your platform for online learning. Browse courses, track progress, and advance your education.">
+    <meta name="keywords" content="online learning, courses, education, EduConnect">
+    <meta name="author" content="George karm">
     <title>EduConnect - Home</title>
+
 </head>
 
 <body>
@@ -17,21 +21,19 @@
 
         <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="pages/about.html">About Us</a></li>
-                <li><a href="pages/course-catalog.html">Course Catalog</a></li>
-                <li><a href="pages/course-detail.html">Course Details (Sample)</a></li>
-                <li><a href="pages/student-dashboard.html">Student Dashboard</a></li>
-                <li><a href="pages/registration.html">Registration</a></li>
-                <li><a href="pages/contact.html">Contact Me</a></li>
-                <li><a href="https://www.gu.edu.eg" target="_blank">University Website</a></li>
+                <li><a href="pages/about.html" title="Learn about EduConnect and our mission">About Us</a></li>
+                <li><a href="pages/course-catalog.html" title="Browse all available courses">Course Catalog</a></li>
+                <li><a href="pages/course-detail.html" title="View a sample course with full details">Course Details (Sample)</a></li>
+                <li><a href="pages/student-dashboard.html" title="Access your personalized learning dashboard">Student Dashboard</a></li>
+                <li><a href="pages/registration.html" title="Register for courses now">Registration</a></li>
+                <li><a href="pages/contact.html" title="Contact our support team">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg" target="_blank" rel="noopener noreferrer" title="Visit the university website">University Website</a></li>
             </ul>
         </nav>
     </header>
 
-    <nav aria-label="Breadcrumb">
-        <span>Home</span>
-    </nav>
 
+    <!-- ===== MAIN CONTENT SECTION ===== -->
     <main aria-label="Homepage content">
         <section aria-label="Main content">
             <section>
@@ -127,19 +129,19 @@
             <section>
                 <h2>Search Courses</h2>
                 <form action="#" method="get">
-                    <label>Search</label>
-                    <input type="text" name="search" placeholder="Search by course, topic, or instructor">
-                    <button type="submit">Search</button>
+                    <label for="search-input">Search:</label>
+                    <input id="search-input" type="text" name="search" placeholder="Search by course, topic, or instructor" title="Enter keywords to search for courses">
+                    <button type="submit" title="Search for courses">Search</button>
                 </form>
             </section>
 
             <section>
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="pages/course-catalog.html">Browse all courses</a></li>
-                    <li><a href="pages/registration.html">Register now</a></li>
-                    <li><a href="pages/student-dashboard.html">Go to my dashboard</a></li>
-                    <li><a href="pages/contact.html">Get support</a></li>
+                    <li><a href="pages/course-catalog.html" title="Browse all available courses">Browse all courses</a></li>
+                    <li><a href="pages/registration.html" title="Register for courses now">Register now</a></li>
+                    <li><a href="pages/student-dashboard.html" title="Access your personalized learning dashboard">Go to my dashboard</a></li>
+                    <li><a href="pages/contact.html" title="Contact our support team">Get support</a></li>
                 </ul>
             </section>
 
@@ -154,32 +156,33 @@
                 </div>
             </section>
 
-            <div>
-                <aside aria-label="Promotional offer">
-                    <h3>Upgrade to EduConnect Plus</h3>
-                    <p>Unlock unlimited course access, premium support, and exclusive live sessions with faculty experts.</p>
-                    <p><strong>Limited‑time offer:</strong> 30% off annual plans for new students.</p>
-                    <p><a href="pages/registration.html">Learn more &amp; upgrade</a></p>
-                </aside>
-            </div>
+            <aside aria-label="Promotional offer">
+                <h3>Upgrade to EduConnect Plus</h3>
+                <p>Unlock unlimited course access, premium support, and exclusive live sessions with faculty experts.</p>
+                <p><strong>Limited‑time offer:</strong> 30% off annual plans for new students.</p>
+                <p><a href="pages/registration.html" title="Upgrade to EduConnect Plus subscription">Learn more &amp; upgrade</a></p>
+            </aside>
         </aside>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER SECTION ===== -->
     <footer>
-        <div>
-            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg">Email the EduConnect team</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <address>
+            <p><a href="mailto:Samy.Ghoniemy@Gu.edu.eg" title="Email EduConnect support team">Email the EduConnect team</a></p>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Visit our LinkedIn page">LinkedIn</a> •
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Visit our Facebook page">Facebook</a> •
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Visit our Twitter page">Twitter</a>
+            </p>
+            <p><a href="pages/about.html" title="Learn about EduConnect and our mission">About Us</a></p>
+        </address>
 
-            <a href="pages/about.html">About Us</a>
-        </div>
-
         <div>
-            <span>&copy; 2025 EduConnect. All rights reserved.</span>
+            <p>&copy; 2025 EduConnect. All rights reserved.</p>
+            <p>Last Updated <time datetime="2025-12-04">December 4, 2025</time></p>
         </div>
     </footer>
+    <!-- ===== END FOOTER SECTION ===== -->
 </body>
 
 </html>

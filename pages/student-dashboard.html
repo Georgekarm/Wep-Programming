@@ -4,47 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your personalized student dashboard with courses, progress tracking, and learning goals.">
+    <meta name="keywords" content="dashboard, courses, progress, student, learning">
+    <meta name="author" content="George karm">
     <title>EduConnect - Student Dashboard</title>
 </head>
 
 <body>
+    <!-- =========== HEADER SECTION =========== -->
     <header>
         <div>
             <h1>EduConnect</h1>
-            <p>Connecting learners with world‑class courses anytime, anywhere.</p>
+            <p>Connecting learners with world-class courses anytime, anywhere.</p>
         </div>
-
         <!-- Primary navigation matches other inner pages -->
         <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="course-catalog.html">Course Catalog</a></li>
-                <li><a href="course-detail.html">Course Details (Sample)</a></li>
-                <li><a href="student-dashboard.html">Student Dashboard</a></li>
-                <li><a href="registration.html">Registration</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="https://www.exampleuniversity.edu" target="_blank">University Website</a></li>
+                <li><a href="../index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About Us">About Us</a></li>
+                <li><a href="course-catalog.html" title="Course Catalog">Course Catalog</a></li>
+                <li><a href="course-detail.html" title="Course Details">Course Details (Sample)</a></li>
+                <li><a href="student-dashboard.html" title="Student Dashboard">Student Dashboard</a></li>
+                <li><a href="registration.html" title="Registration">Registration</a></li>
+                <li><a href="contact.html" title="Contact Me">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg" target="_blank" rel="noopener noreferrer" title="University Website">University Website</a></li>
             </ul>
         </nav>
     </header>
+    <!-- =========== END HEADER =========== -->
 
-    <!-- Breadcrumb: Home > Dashboard -->
-    <nav aria-label="Breadcrumb">
-        <span><a href="../index.html">Home</a> &gt; Student Dashboard</span>
+    <!-- Breadcrumb navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <span>Student Dashboard</span>
     </nav>
 
+    <!-- =========== MAIN SECTION =========== -->
     <main>
         <!-- Personal header area -->
         <section>
             <header>
                 <h1>Welcome, Student Name</h1>
             </header>
-
             <figure>
-                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" width="120" height="120" alt="Student profile placeholder">
+                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" width="120" height="120" alt="Student profile picture placeholder">
             </figure>
-
             <dl>
                 <dt>Total Courses</dt>
                 <dd>8</dd>
@@ -67,15 +70,13 @@
 
                     <article>
                         <figure>
-                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" width="200" height="120" alt="Web Programming course thumbnail">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" width="200" height="120" alt="Web Programming I course thumbnail">
                         </figure>
                         <h3>Web Programming I</h3>
                         <p>Instructor: Dr. Smith</p>
                         <p>Progress: 65%</p>
-                        <p>Last accessed:
-                            <time datetime="2025-11-30">Nov 30, 2025</time>
-                        </p>
-                        <p><a href="course-detail.html">Continue Learning</a></p>
+                        <p>Last accessed: <time datetime="2025-11-30">Nov 30, 2025</time></p>
+                        <p><a href="course-detail.html" title="Continue learning this course">Continue Learning</a></p>
                     </article>
 
                     <article>
@@ -85,10 +86,8 @@
                         <h3>Data Structures</h3>
                         <p>Instructor: Prof. Lee</p>
                         <p>Progress: 40%</p>
-                        <p>Last accessed:
-                            <time datetime="2025-11-28">Nov 28, 2025</time>
-                        </p>
-                        <p><a href="course-detail.html">Continue Learning</a></p>
+                        <p>Last accessed: <time datetime="2025-11-28">Nov 28, 2025</time></p>
+                        <p><a href="course-detail.html" title="Continue learning this course">Continue Learning</a></p>
                     </article>
 
                     <article>
@@ -98,10 +97,8 @@
                         <h3>Database Systems</h3>
                         <p>Instructor: Dr. Ahmed</p>
                         <p>Progress: 80%</p>
-                        <p>Last accessed:
-                            <time datetime="2025-12-01">Dec 1, 2025</time>
-                        </p>
-                        <p><a href="course-detail.html">Continue Learning</a></p>
+                        <p>Last accessed: <time datetime="2025-12-01">Dec 1, 2025</time></p>
+                        <p><a href="course-detail.html" title="Continue learning this course">Continue Learning</a></p>
                     </article>
                 </section>
 
@@ -164,41 +161,27 @@
                     <article>
                         <p><strong>Type:</strong> Course started</p>
                         <p>Data Structures</p>
-                        <p>
-                            <time datetime="2025-11-20T09:15">Nov 20, 2025, 9:15 AM</time>
-                        </p>
+                        <p><time datetime="2025-11-20T09:15">Nov 20, 2025, 9:15 AM</time></p>
                     </article>
-
                     <article>
                         <p><strong>Type:</strong> Assignment submitted</p>
                         <p>HTML Basics – Web Programming I</p>
-                        <p>
-                            <time datetime="2025-11-22T14:30">Nov 22, 2025, 2:30 PM</time>
-                        </p>
+                        <p><time datetime="2025-11-22T14:30">Nov 22, 2025, 2:30 PM</time></p>
                     </article>
-
                     <article>
                         <p><strong>Type:</strong> Quiz completed</p>
                         <p>Intro to SQL Quiz</p>
-                        <p>
-                            <time datetime="2025-11-24T11:00">Nov 24, 2025, 11:00 AM</time>
-                        </p>
+                        <p><time datetime="2025-11-24T11:00">Nov 24, 2025, 11:00 AM</time></p>
                     </article>
-
                     <article>
                         <p><strong>Type:</strong> Certificate earned</p>
                         <p>Intro to Web Development</p>
-                        <p>
-                            <time datetime="2025-11-26T16:45">Nov 26, 2025, 4:45 PM</time>
-                        </p>
+                        <p><time datetime="2025-11-26T16:45">Nov 26, 2025, 4:45 PM</time></p>
                     </article>
-
                     <article>
                         <p><strong>Type:</strong> Assignment submitted</p>
                         <p>Array Implementation – Data Structures</p>
-                        <p>
-                            <time datetime="2025-11-29T19:20">Nov 29, 2025, 7:20 PM</time>
-                        </p>
+                        <p><time datetime="2025-11-29T19:20">Nov 29, 2025, 7:20 PM</time></p>
                     </article>
                 </section>
             </div>
@@ -323,29 +306,34 @@
                 <section>
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="course-catalog.html">View All Courses</a></li>
-                        <li><a href="course-detail.html">Upcoming Exams &amp; Assessments</a></li>
-                        <li><a href="registration.html">Manage Registrations</a></li>
-                        <li><a href="contact.html">Support &amp; Help</a></li>
+                        <li><a href="course-catalog.html" title="View All Courses">View All Courses</a></li>
+                        <li><a href="course-detail.html" title="Upcoming Exams & Assessments">Upcoming Exams &amp; Assessments</a></li>
+                        <li><a href="registration.html" title="Manage Registrations">Manage Registrations</a></li>
+                        <li><a href="contact.html" title="Support & Help">Support &amp; Help</a></li>
                     </ul>
                 </section>
             </aside>
         </div>
     </main>
+    <!-- =========== END MAIN =========== -->
 
+    <!-- =========== FOOTER SECTION =========== -->
     <footer>
-        <div>
-            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg">Email the EduConnect team</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a href="about.html">About Us</a>
+        <address>
+            <a href="mailto:Samy.Ghoniemy@Gu.edu.eg" title="Email the EduConnect team">Email the EduConnect team</a>
+        </address>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">Twitter</a>
+            <a href="about.html" title="About Us">About Us</a>
         </div>
-
         <div>
-            <span>&copy; 2025 EduConnect. All rights reserved.</span>
+            <p>&copy; 2025 EduConnect. All rights reserved.</p>
+            <p>Last Updated <time datetime="2025-12-04">December 4, 2025</time></p>
         </div>
     </footer>
+    <!-- =========== END FOOTER =========== -->
 </body>
 
 </html>
